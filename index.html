@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="images/logo.svg" alt="Blogr logo" width="101" height="40" />
+        </a>
+
+        <nav>
+          <ul class="navbar-list">
+            <li>
+              <div class="nav-item">
+                <span>Features</span>
+                <div class="arrow-down">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      d="M1 1l4 4 4-4"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <ul class="dropdown-list">
+                  <li class="icon-list">
+                    <img src="./images/icon-todo.svg" alt="todo icon" />
+                    <a href="#" class="dropdown-link">Todo list</a>
+                  </li>
+
+                  <li class="icon-list">
+                    <img src="./images/icon-calendar.svg" alt="calendar icon" />
+                    <a href="#" class="dropdown-link">Calendar</a>
+                  </li>
+
+                  <li class="icon-list">
+                    <img
+                      src="./images/icon-reminders.svg"
+                      alt="Reminders icon"
+                    />
+                    <a href="#" class="dropdown-link">Reminders</a>
+                  </li>
+
+                  <li class="icon-list">
+                    <img src="./images/icon-planning.svg" alt="Planning icon" />
+                    <a href="#" class="dropdown-link">Planning</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="nav-item">
+                <span>Company</span>
+                <div class="arrow-down">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      d="M1 1l4 4 4-4"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <ul class="dropdown-list">
+                  <li>
+                    <a href="#" class="dropdown-link">History</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-link">Our Team</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-link">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="nav-item">
+                <span>Carrers</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="nav-item">
+                <span>About</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="auth-btns">
+            <button class="btn">Login</button>
+            <button class="btn">Register</button>
+          </div>
+        </nav>
+
+        <button class="nav-toggle-btn"></button>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-container">
+        <div class="item">
+          <div class="img-container">
+            <picture>
+              <source
+                srcset="./images/image-hero-desktop.png"
+                media="(min-width: 1020px)"
+                class="img"
+              />
+              <source srcset="./images/image-hero-mobile.png" class="img" />
+              <img
+                src="./images/image-hero-mobile.png"
+                alt="hero image"
+                class="img"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="items">
+          <div class="description-box">
+            <h1>Make remote work</h1>
+            <p>
+              Get your team in a sync. no matter your location. Streaming
+              processes, create team rituals, and watch productivity soar
+            </p>
+
+            <button class="btn">
+              <a href="#">Learn more</a>
+            </button>
+
+            <div class="sponsor-box">
+              <img src="./images/client-databiz.svg" alt="" />
+              <img src="./images/client-audiophile.svg" alt="" />
+              <img src="./images/client-meet.svg" alt="" />
+              <img src="./images/client-maker.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Raven Valdeviso</a>.
+    </div> -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
